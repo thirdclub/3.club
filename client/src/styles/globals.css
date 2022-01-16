@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --rsbs-backdrop-bg: rgba(0, 0, 0, 0.6);
+    --rsbs-bg: #fff;
+    --rsbs-handle-bg: hsla(0, 0%, 0%, 0.14);
+    --rsbs-max-w: 640px;
+    --rsbs-ml: auto;
+    --rsbs-mr: auto;
+    --rsbs-overlay-rounded: 16px;
+  }
+}
+
+@layer utilities {
+  .mb-safe {
+    margin-bottom: env(safe-area-inset-bottom);
+  }
+
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+body {
+  -webkit-tap-highlight-color: transparent;
+}
